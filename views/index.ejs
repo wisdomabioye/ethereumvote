@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Decentralized Voting System</title>
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section id="row">
+		<div class="container">
+			<h2 class="center-align">A Decentralized Voting Prototype</h2>
+			<p class="center-align">Simple voting system on Ethereum network</p>
+			<div class="row">
+				<div id="preloader" class="col s12 m7 offset-m5" style="margin-top: 100px;">
+					<div class="preloader-wrapper big active center-align">
+				      <div class="spinner-layer spinner-blue">
+				        <div class="circle-clipper left">
+				          <div class="circle"></div>
+				        </div><div class="gap-patch">
+				          <div class="circle"></div>
+				        </div><div class="circle-clipper right">
+				          <div class="circle"></div>
+				        </div>
+				      </div>
+
+				      <div class="spinner-layer spinner-red">
+				        <div class="circle-clipper left">
+				          <div class="circle"></div>
+				        </div><div class="gap-patch">
+				          <div class="circle"></div>
+				        </div><div class="circle-clipper right">
+				          <div class="circle"></div>
+				        </div>
+				      </div>
+
+				      <div class="spinner-layer spinner-yellow">
+				        <div class="circle-clipper left">
+				          <div class="circle"></div>
+				        </div><div class="gap-patch">
+				          <div class="circle"></div>
+				        </div><div class="circle-clipper right">
+				          <div class="circle"></div>
+				        </div>
+				      </div>
+
+				      <div class="spinner-layer spinner-green">
+				        <div class="circle-clipper left">
+				          <div class="circle"></div>
+				        </div><div class="gap-patch">
+				          <div class="circle"></div>
+				        </div><div class="circle-clipper right">
+				          <div class="circle"></div>
+				        </div>
+				      </div>
+				    </div>
+				</div>
+				<div class="col s12">
+					<p id="txhash" class="flow-text">
+						
+					</p>
+				</div>
+				<div id="candidate" class="col s12">
+					<table class="responsive-table highlight">
+						<thead>
+							<tr>
+								<th>Candidate Name</th>
+								<th>Vote count</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="flow-text">Rockstar</span></td>
+								<td>
+									<a class="btn-floating btn-large cyan pulse" style="font-size: 25px;">
+										<%= voteCount['0'] %>	
+									</a>
+								</td>
+								
+								<td>
+									<button class="btn red waves-light waves-effect vote" data-candidate="Rockstar">Vote <i></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="flow-text">Bussy</span></td>
+								<td>
+									<a class="btn-floating btn-large cyan pulse" style="font-size: 25px;">
+										<%= voteCount['1'] %>	
+									</a>
+									
+								</td>
+								<td>
+									<button class="btn red waves-light waves-effect vote" data-candidate="Bussy">Vote <i></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="flow-text">Icon</span></td>
+								<td>
+									<a class="btn-floating btn-large cyan pulse" style="font-size: 25px;">
+										<%= voteCount['2'] %>	
+									</a>
+									
+								</td>
+								<td>
+									<button class="btn red waves-light waves-effect vote" data-candidate="Icon">Vote <i></i></button>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="flow-text">Noble</span></td>
+								<td>
+									<a class="btn-floating btn-large cyan pulse" style="font-size: 25px;">
+										<%= voteCount['3'] %>	
+									</a>
+									
+								</td>
+								<td>
+									<button class="btn red waves-light waves-effect vote" data-candidate="Noble">Vote <i></i></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="col s12">
+					<p><strong>Please note:</strong></p>
+					<ul class="browser-default">
+						<li>No voter registration</li>
+						<li>No voter verification</li>
+						<li>Voting is sent from a single address</li>
+						<li>Voting can be cast from any ETH address</li>
+						<li>Total vote is the number of successful transactions sent to the smart contract address</li>
+						<li>Invalid vote are automatically not confirmed or fail automatically.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+<script src="jquery.min.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="axios.min.js"></script>
+<script src="script.js"></script>
+</html>

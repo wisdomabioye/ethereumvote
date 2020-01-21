@@ -1,0 +1,21 @@
+{
+  "name": "ethereumvote",
+  "version": "1.0.0",
+  "description": "Decentralized Voting System",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon -r dotenv/config index"
+  },
+  "author": "Wisdom Abioye",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "ethereumjs-tx": "^1.3.7",
+    "express": "^4.16.4",
+    "web3": "^1.2.4"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

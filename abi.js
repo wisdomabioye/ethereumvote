@@ -1,0 +1,2 @@
+
+module.exports = [{"constant":true,"inputs":[],"name":"getVotes","outputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_vote","type":"string"}],"name":"submitVote","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]
