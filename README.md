@@ -1,7 +1,7 @@
 ### A Decentralized Voting Prototype 
 Simple voting system on Ethereum network
 
-Live here: https://ethereumvote-gpzfcjwpqu.now.sh/
+Live here: https://ethereumvote-lnwuavqphj.now.sh/
 
 Contract is here: https://ropsten.etherscan.io/address/0x366156b34e14ece5f11e4c87ed7c62e9a8bb5e67
 
